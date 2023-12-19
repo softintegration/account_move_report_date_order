@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template inherit_id="account.report_invoice_document" id="report_invoice_document_inherited">
+        <xpath expr="//div[@name='origin']" position="after">
+            <div class="col-auto col-3 mw-100 mb-2" t-if="o.move_type == 'out_invoice' and o.date_order"  name="date_order">
+                <strong>Date order:</strong>
+                <p class="m-0" t-field="o.date_order"/>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>
