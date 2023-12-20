@@ -5,7 +5,12 @@
         <xpath expr="//div[@name='origin']" position="after">
             <div class="col-auto col-3 mw-100 mb-2" t-if="o.move_type == 'out_invoice' and o.date_order"  name="date_order">
                 <strong>Date order:</strong>
-                <p class="m-0" t-field="o.date_order"/>
+                <t t-if="o.display_only_date_in_date_order">
+                    <p class="m-0" t-esc="o.date_order" t-options='{"widget": "date"}'/>
+                </t>
+                <t t-if="not o.display_only_date_in_date_order">
+                    <p class="m-0" t-field="o.date_order"/>
+                </t>
             </div>
         </xpath>
     </template>

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-19 21:08+0000\n"
-"PO-Revision-Date: 2023-12-19 21:08+0000\n"
+"POT-Creation-Date: 2023-12-20 08:11+0000\n"
+"PO-Revision-Date: 2023-12-20 08:11+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,6 +20,44 @@ msgstr ""
 msgid "<strong>Date order:</strong>"
 msgstr "<strong>Date bon de commande :</strong>"
 
+#. module: account_move_report_date_order
+#: model:ir.model,name:account_move_report_date_order.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de config"
+
+#. module: account_move_report_date_order
+#: model:ir.model.fields,help:account_move_report_date_order.field_account_bank_statement_line__date_order
+#: model:ir.model.fields,help:account_move_report_date_order.field_account_move__date_order
+#: model:ir.model.fields,help:account_move_report_date_order.field_account_payment__date_order
+msgid ""
+"Creation date of draft/sent orders,\n"
+"Confirmation date of confirmed orders."
+msgstr ""
+
+#. module: account_move_report_date_order
+#: model_terms:ir.ui.view,arch_db:account_move_report_date_order.res_config_settings_view_form_inherited
+msgid "Display Date order in Date format"
+msgstr "Permet d'afficher la Date bon de commande sans la précision du temps (Date uniquement)"
+
+#. module: account_move_report_date_order
+#: model:ir.model.fields,field_description:account_move_report_date_order.field_account_bank_statement_line__display_only_date_in_date_order
+#: model:ir.model.fields,field_description:account_move_report_date_order.field_account_move__display_only_date_in_date_order
+#: model:ir.model.fields,field_description:account_move_report_date_order.field_account_payment__display_only_date_in_date_order
+#: model:ir.model.fields,field_description:account_move_report_date_order.field_res_config_settings__display_only_date_in_date_order
+msgid "Display Order date in Date only format"
+msgstr "Afficher la Date bon de commande avec le format Date uniquement"
+
+#. module: account_move_report_date_order
+#: model:ir.model,name:account_move_report_date_order.model_account_move
+msgid "Journal Entry"
+msgstr "Pièce comptable"
+
+#. module: account_move_report_date_order
+#: model:ir.model.fields,field_description:account_move_report_date_order.field_account_bank_statement_line__date_order
+#: model:ir.model.fields,field_description:account_move_report_date_order.field_account_move__date_order
+#: model:ir.model.fields,field_description:account_move_report_date_order.field_account_payment__date_order
+msgid "Order Date"
+msgstr "Date bon de commande"
 
 #. module: account_move_report_date_order
 #: model:ir.model.fields,field_description:account_move_report_date_order.field_account_bank_statement_line__sale_order_id
